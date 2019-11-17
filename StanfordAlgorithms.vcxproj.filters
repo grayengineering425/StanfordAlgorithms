@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="GreedyAlgorithms">
+      <UniqueIdentifier>{33ef68ff-533c-4482-b39c-d33761679835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GreedyAlgorithms\Scheduling">
+      <UniqueIdentifier>{d2c331c4-f562-4761-8269-642634d0ebb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GreedyAlgorithms\PrimsAlgorithm">
+      <UniqueIdentifier>{ef0bd0c8-9dce-4ca4-a6b0-ebcfbef59a0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimsAlgorithm\Prim.cpp">
+      <Filter>GreedyAlgorithms\PrimsAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Scheduling\Scheduling.cpp">
+      <Filter>GreedyAlgorithms\Scheduling</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PrimsAlgorithm\Prim.h">
+      <Filter>GreedyAlgorithms\PrimsAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Scheduling\Scheduling.h">
+      <Filter>GreedyAlgorithms\Scheduling</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
