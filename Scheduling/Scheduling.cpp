@@ -9,7 +9,7 @@
 using namespace Greedy;
 
 Scheduling::Scheduling(bool dif)
-	:	jobPath	(L"C:/modules/StanfordAlgorithms/Debug/jobs.txt")
+	:	jobPath	(L"C:/modules/StanfordAlgorithms/x64/Debug/jobs.txt")
 	,	dif		(dif)
 {
 	jobsFromFile();
@@ -17,12 +17,12 @@ Scheduling::Scheduling(bool dif)
 
 Scheduling::~Scheduling() = default;
 
-int Scheduling::getCompletionTime()
+long long Scheduling::getCompletionTime()
 {
 	return dif ? getCompletionTimeDifference() : getCompletionTimeRatio();
 }
 
-int Scheduling::getCompletionTimeDifference()
+long long Scheduling::getCompletionTimeDifference()
 {
 	std::sort(jobs.begin(), jobs.end(), [this](const Job& lhs, const Job& rhs)
 	{
@@ -31,25 +31,25 @@ int Scheduling::getCompletionTimeDifference()
 		return lhs.score > rhs.score;
 	});
 
-	int length = 0;
-	int cost   = 0;
+	long long length = 0;
+	long long cost   = 0;
 
 	for (const auto& job : jobs) { length = length + job.length; cost += length * job.weight; }
 
 	return cost;
 }
 
-int Scheduling::getCompletionTimeRatio()
+long long Scheduling::getCompletionTimeRatio()
 {
 	std::sort(jobs.begin(), jobs.end(), [this](const Job& lhs, const Job& rhs)
 	{
 		return lhs.score > rhs.score;
 	});
 
-	int length = 0;
-	int cost   = 0;
+	long long length = 0;
+	long long cost   = 0;
 
-	for (const auto& job : jobs) { length = length + job.length; cost += length * job.weight; }
+	for (const auto& job : jobs){ length = length + job.length; cost += length * job.weight; }
 
 	return cost;
 }
