@@ -7,7 +7,7 @@ using namespace Greedy;
 
 int main()
 {
-	Scheduling s(false);
+	Scheduling s(true);
 
 	std::cout << s.getCompletionTime() << "\n";
 
