@@ -2,6 +2,7 @@
 #include "Scheduling/Scheduling.h"
 #include "KruskalsAlgorithm/Kruskal.h"
 #include "DynamicProgramming/MaxIndependentSet/MaxSet.h"
+#include "DynamicProgramming/Knapsack/Knapsack.h"
 
 #include <iostream>
 
@@ -10,9 +11,8 @@ using namespace Dynamic;
 
 int main()
 {
-	MaxSet s;
-
-	auto r = s.getMaxSet();
+	Knapsack k;
+	k.getOptimalSolution();
 
 	return 0;
 }

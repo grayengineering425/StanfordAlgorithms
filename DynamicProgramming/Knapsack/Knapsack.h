@@ -14,11 +14,15 @@ public:
 	int getOptimalSolution();
 
 private:
-	void valuesFromFile();
+	void valuesFromFile(bool test=false);
 
 private:
 	std::vector<int> values;
 	std::vector<int> weights;
+
+	int capacity;
+
+	std::wstring fileName;
 };
 
 }
