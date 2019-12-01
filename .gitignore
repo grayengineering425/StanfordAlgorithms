@@ -34,4 +34,5 @@
 #custom
 Debug/
 .vs/
-.vs/StanfordAlgorithms/v15/.suo
+.vs/StanfordAlgorithms/v15/
+x64/
