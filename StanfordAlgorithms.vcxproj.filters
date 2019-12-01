@@ -14,6 +14,18 @@
     <Filter Include="GreedyAlgorithms\PrimsAlgorithm">
       <UniqueIdentifier>{ef0bd0c8-9dce-4ca4-a6b0-ebcfbef59a0c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GreedyAlgorithms\KruskalsAlgorithm">
+      <UniqueIdentifier>{6adf7e14-be10-4260-802e-3052a6a7bdc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DynamicProgramming">
+      <UniqueIdentifier>{817a6115-ee35-4a6c-9be2-460d0c0b141d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DynamicProgramming\MaxIndependentSet">
+      <UniqueIdentifier>{1b0fa513-28cd-4fdd-a67d-ac6d581c7e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DynamicProgramming\Knapsack">
+      <UniqueIdentifier>{6bdda545-7fa9-4aa3-b8d3-0e391aef1e4c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -25,6 +37,15 @@
     <ClCompile Include="Scheduling\Scheduling.cpp">
       <Filter>GreedyAlgorithms\Scheduling</Filter>
     </ClCompile>
+    <ClCompile Include="KruskalsAlgorithm\Kruskal.cpp">
+      <Filter>GreedyAlgorithms\KruskalsAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicProgramming\MaxIndependentSet\MaxSet.cpp">
+      <Filter>DynamicProgramming\MaxIndependentSet</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicProgramming\Knapsack\Knapsack.cpp">
+      <Filter>DynamicProgramming\Knapsack</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PrimsAlgorithm\Prim.h">
@@ -32,6 +53,15 @@
     </ClInclude>
     <ClInclude Include="Scheduling\Scheduling.h">
       <Filter>GreedyAlgorithms\Scheduling</Filter>
+    </ClInclude>
+    <ClInclude Include="KruskalsAlgorithm\Kruskal.h">
+      <Filter>GreedyAlgorithms\KruskalsAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicProgramming\MaxIndependentSet\MaxSet.h">
+      <Filter>DynamicProgramming\MaxIndependentSet</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicProgramming\Knapsack\Knapsack.h">
+      <Filter>DynamicProgramming\Knapsack</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
