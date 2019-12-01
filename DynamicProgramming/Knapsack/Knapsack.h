@@ -12,9 +12,12 @@ public:
 	~Knapsack();
 
 	int getOptimalSolution();
+	int getOptimizedSolution();
 
 private:
 	void valuesFromFile(bool test=false);
+
+	int getOptimizedSolution(std::vector<int>& lastRow, int row);
 
 private:
 	std::vector<int> values;

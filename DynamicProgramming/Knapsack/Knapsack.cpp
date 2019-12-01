@@ -9,7 +9,7 @@
 using namespace Dynamic;
 
 Knapsack::Knapsack()
-	:	fileName(L"C:/modules/StanfordAlgorithms/x64/Debug/knapsack1.txt")
+	:	fileName(L"C:/modules/StanfordAlgorithms/x64/Debug/knapsack_big.txt")
 {
 }
 
@@ -34,6 +34,35 @@ int Knapsack::getOptimalSolution()
 
 	return dp[dp.size() - 1][dp[0].size() - 1];
 	//2493893
+}
+
+int Knapsack::getOptimizedSolution()
+{
+	valuesFromFile();
+
+	std::vector<int> row(capacity + 1, 0);
+	
+	return getOptimizedSolution(row, 1);
+	//2493893
+}
+
+int Knapsack::getOptimizedSolution(std::vector<int>& lastRow, int row)
+{
+	if (row == values.size()) return lastRow[lastRow.size() - 1];
+
+	std::vector<int> curRow(capacity + 1, 0);
+
+	for (int j = 0; j < curRow.size(); ++j)
+	{
+		if (weights[row] > j)
+			curRow[j] = lastRow[j];
+		else
+			curRow[j] = std::max(lastRow[j - weights[row]] + values[row], lastRow[j]);
+	}
+
+	memcpy(lastRow.data(), curRow.data(), curRow.size() * sizeof(int));
+
+	return getOptimizedSolution(lastRow, row + 1);
 }
 
 void Knapsack::valuesFromFile(bool test)

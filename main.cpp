@@ -12,7 +12,7 @@ using namespace Dynamic;
 int main()
 {
 	Knapsack k;
-	k.getOptimalSolution();
+	k.getOptimizedSolution();
 
 	return 0;
 }
