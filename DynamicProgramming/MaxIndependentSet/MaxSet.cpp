@@ -38,7 +38,7 @@ std::vector<int> MaxSet::reconstructSet(std::vector<int>& dp)
 {
 	std::vector<int> recon;
 
-	for (int i=dp.size()-1; i>=1; --i)
+	for (int i=static_cast<int>(dp.size())-1; i>=1; --i)
 	{
 		if (i == 1){ recon.insert(recon.begin(), i); continue; }
 		
