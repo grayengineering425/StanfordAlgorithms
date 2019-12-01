@@ -1,17 +1,18 @@
 #include "PrimsAlgorithm/Prim.h"
 #include "Scheduling/Scheduling.h"
+#include "KruskalsAlgorithm/Kruskal.h"
+#include "DynamicProgramming/MaxIndependentSet/MaxSet.h"
 
 #include <iostream>
 
 using namespace Greedy;
+using namespace Dynamic;
 
 int main()
 {
-	Scheduling s(true);
+	MaxSet s;
 
-	std::cout << s.getCompletionTime() << "\n";
+	auto r = s.getMaxSet();
 
 	return 0;
-
-	//-3612829
 }
