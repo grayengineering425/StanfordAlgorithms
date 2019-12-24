@@ -26,6 +26,9 @@
     <Filter Include="DynamicProgramming\Knapsack">
       <UniqueIdentifier>{6bdda545-7fa9-4aa3-b8d3-0e391aef1e4c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GreedyAlgorithms\HuffmanCodes">
+      <UniqueIdentifier>{94ebd4e5-a2a1-47e9-8d5c-645b5387c549}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -46,6 +49,9 @@
     <ClCompile Include="DynamicProgramming\Knapsack\Knapsack.cpp">
       <Filter>DynamicProgramming\Knapsack</Filter>
     </ClCompile>
+    <ClCompile Include="HuffmanCodes\Huffman.cpp">
+      <Filter>GreedyAlgorithms\HuffmanCodes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PrimsAlgorithm\Prim.h">
@@ -62,6 +68,9 @@
     </ClInclude>
     <ClInclude Include="DynamicProgramming\Knapsack\Knapsack.h">
       <Filter>DynamicProgramming\Knapsack</Filter>
+    </ClInclude>
+    <ClInclude Include="HuffmanCodes\Huffman.h">
+      <Filter>GreedyAlgorithms\HuffmanCodes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
