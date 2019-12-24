@@ -5,6 +5,7 @@
 #include "DynamicProgramming/Knapsack/Knapsack.h"
 #include "HuffmanCodes/Huffman.h"
 #include "Graph/TopologicalSort/Topological.h"
+#include "Graph/SCC/SCC.h"
 
 #include <iostream>
 
@@ -14,11 +15,8 @@ using namespace Graph;
 
 int main()
 {
-	std::vector<std::vector<int>> edges = { { 5, 2 }, { 5, 0 }, { 4, 0 }, { 4, 1 }, { 2, 3 }, { 3, 1 } };
-	int n = 6;
-
-	TopologicalSort t(edges, n);
-	t.sort();
+	SCC s(false);
+	s.run();
 
 	return 0;
 }

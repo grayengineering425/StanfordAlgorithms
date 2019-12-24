@@ -10,6 +10,7 @@
     <ClCompile Include="PrimsAlgorithm\Prim.cpp" />
     <ClCompile Include="Scheduling\Scheduling.cpp" />
     <ClCompile Include="Graph\TopologicalSort\Topological.cpp" />
+    <ClCompile Include="Graph\SCC\SCC.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graph\Tarjan\Tarjan.h" />
@@ -20,5 +21,6 @@
     <ClInclude Include="PrimsAlgorithm\Prim.h" />
     <ClInclude Include="Scheduling\Scheduling.h" />
     <ClInclude Include="Graph\TopologicalSort\Topological.h" />
+    <ClInclude Include="Graph\SCC\SCC.h" />
   </ItemGroup>
 </Project>
