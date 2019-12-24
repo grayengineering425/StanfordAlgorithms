@@ -14,6 +14,12 @@
     <Filter Include="GreedyAlgorithms\PrimsAlgorithm">
       <UniqueIdentifier>{ef0bd0c8-9dce-4ca4-a6b0-ebcfbef59a0c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Graph">
+      <UniqueIdentifier>{1c5b3a3a-9027-4687-a631-03ea6df4725d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graph\Tarjan">
+      <UniqueIdentifier>{a58e0b8b-ebc7-4df2-96e8-7a1bf1bd7126}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -25,6 +31,9 @@
     <ClCompile Include="Scheduling\Scheduling.cpp">
       <Filter>GreedyAlgorithms\Scheduling</Filter>
     </ClCompile>
+    <ClCompile Include="Graph\Tarjan\Tarjan.cpp">
+      <Filter>Graph\Tarjan</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PrimsAlgorithm\Prim.h">
@@ -32,6 +41,9 @@
     </ClInclude>
     <ClInclude Include="Scheduling\Scheduling.h">
       <Filter>GreedyAlgorithms\Scheduling</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\Tarjan\Tarjan.h">
+      <Filter>Graph\Tarjan</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

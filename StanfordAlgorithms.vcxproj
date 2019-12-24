@@ -131,11 +131,13 @@ xcopy "$(SolutionDir)Scheduling/Data/jobs.txt" "$(TargetDir)" /y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Graph\Tarjan\Tarjan.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PrimsAlgorithm\Prim.cpp" />
     <ClCompile Include="Scheduling\Scheduling.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Graph\Tarjan\Tarjan.h" />
     <ClInclude Include="PrimsAlgorithm\Prim.h" />
     <ClInclude Include="Scheduling\Scheduling.h" />
   </ItemGroup>
