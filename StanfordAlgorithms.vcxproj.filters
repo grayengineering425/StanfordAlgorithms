@@ -1,85 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="GreedyAlgorithms">
-      <UniqueIdentifier>{33ef68ff-533c-4482-b39c-d33761679835}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GreedyAlgorithms\Scheduling">
-      <UniqueIdentifier>{d2c331c4-f562-4761-8269-642634d0ebb8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GreedyAlgorithms\PrimsAlgorithm">
-      <UniqueIdentifier>{ef0bd0c8-9dce-4ca4-a6b0-ebcfbef59a0c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Graph">
-      <UniqueIdentifier>{1c5b3a3a-9027-4687-a631-03ea6df4725d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Graph\Tarjan">
-      <UniqueIdentifier>{a58e0b8b-ebc7-4df2-96e8-7a1bf1bd7126}</UniqueIdentifier>
-    <Filter Include="GreedyAlgorithms\KruskalsAlgorithm">
-      <UniqueIdentifier>{6adf7e14-be10-4260-802e-3052a6a7bdc9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DynamicProgramming">
-      <UniqueIdentifier>{817a6115-ee35-4a6c-9be2-460d0c0b141d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DynamicProgramming\MaxIndependentSet">
-      <UniqueIdentifier>{1b0fa513-28cd-4fdd-a67d-ac6d581c7e6b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DynamicProgramming\Knapsack">
-      <UniqueIdentifier>{6bdda545-7fa9-4aa3-b8d3-0e391aef1e4c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GreedyAlgorithms\HuffmanCodes">
-      <UniqueIdentifier>{94ebd4e5-a2a1-47e9-8d5c-645b5387c549}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="Graph\Tarjan\Tarjan.cpp" />
+    <ClCompile Include="DynamicProgramming\Knapsack\Knapsack.cpp" />
+    <ClCompile Include="DynamicProgramming\MaxIndependentSet\MaxSet.cpp" />
+    <ClCompile Include="HuffmanCodes\Huffman.cpp" />
+    <ClCompile Include="KruskalsAlgorithm\Kruskal.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PrimsAlgorithm\Prim.cpp" />
+    <ClCompile Include="Scheduling\Scheduling.cpp" />
+    <ClCompile Include="Graph\TopologicalSort\Topological.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PrimsAlgorithm\Prim.cpp">
-      <Filter>GreedyAlgorithms\PrimsAlgorithm</Filter>
-    </ClCompile>
-    <ClCompile Include="Scheduling\Scheduling.cpp">
-      <Filter>GreedyAlgorithms\Scheduling</Filter>
-    </ClCompile>
-    <ClCompile Include="Graph\Tarjan\Tarjan.cpp">
-      <Filter>Graph\Tarjan</Filter>
-    <ClCompile Include="KruskalsAlgorithm\Kruskal.cpp">
-      <Filter>GreedyAlgorithms\KruskalsAlgorithm</Filter>
-    </ClCompile>
-    <ClCompile Include="DynamicProgramming\MaxIndependentSet\MaxSet.cpp">
-      <Filter>DynamicProgramming\MaxIndependentSet</Filter>
-    </ClCompile>
-    <ClCompile Include="DynamicProgramming\Knapsack\Knapsack.cpp">
-      <Filter>DynamicProgramming\Knapsack</Filter>
-    </ClCompile>
-    <ClCompile Include="HuffmanCodes\Huffman.cpp">
-      <Filter>GreedyAlgorithms\HuffmanCodes</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="PrimsAlgorithm\Prim.h">
-      <Filter>GreedyAlgorithms\PrimsAlgorithm</Filter>
-    </ClInclude>
-    <ClInclude Include="Scheduling\Scheduling.h">
-      <Filter>GreedyAlgorithms\Scheduling</Filter>
-    </ClInclude>
-    <ClInclude Include="Graph\Tarjan\Tarjan.h">
-      <Filter>Graph\Tarjan</Filter>
-    <ClInclude Include="KruskalsAlgorithm\Kruskal.h">
-      <Filter>GreedyAlgorithms\KruskalsAlgorithm</Filter>
-    </ClInclude>
-    <ClInclude Include="DynamicProgramming\MaxIndependentSet\MaxSet.h">
-      <Filter>DynamicProgramming\MaxIndependentSet</Filter>
-    </ClInclude>
-    <ClInclude Include="DynamicProgramming\Knapsack\Knapsack.h">
-      <Filter>DynamicProgramming\Knapsack</Filter>
-    </ClInclude>
-    <ClInclude Include="HuffmanCodes\Huffman.h">
-      <Filter>GreedyAlgorithms\HuffmanCodes</Filter>
-    </ClInclude>
+    <ClInclude Include="Graph\Tarjan\Tarjan.h" />
+    <ClInclude Include="DynamicProgramming\Knapsack\Knapsack.h" />
+    <ClInclude Include="DynamicProgramming\MaxIndependentSet\MaxSet.h" />
+    <ClInclude Include="HuffmanCodes\Huffman.h" />
+    <ClInclude Include="KruskalsAlgorithm\Kruskal.h" />
+    <ClInclude Include="PrimsAlgorithm\Prim.h" />
+    <ClInclude Include="Scheduling\Scheduling.h" />
+    <ClInclude Include="Graph\TopologicalSort\Topological.h" />
   </ItemGroup>
 </Project>

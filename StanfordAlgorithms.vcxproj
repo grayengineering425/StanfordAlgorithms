@@ -134,6 +134,7 @@ xcopy "$(SolutionDir)Scheduling/Data/jobs.txt" "$(TargetDir)" /y</Command>
     <ClCompile Include="Graph\Tarjan\Tarjan.cpp" />
     <ClCompile Include="DynamicProgramming\Knapsack\Knapsack.cpp" />
     <ClCompile Include="DynamicProgramming\MaxIndependentSet\MaxSet.cpp" />
+    <ClCompile Include="Graph\TopologicalSort\Topological.cpp" />
     <ClCompile Include="HuffmanCodes\Huffman.cpp" />
     <ClCompile Include="KruskalsAlgorithm\Kruskal.cpp" />
     <ClCompile Include="main.cpp" />
@@ -144,6 +145,7 @@ xcopy "$(SolutionDir)Scheduling/Data/jobs.txt" "$(TargetDir)" /y</Command>
     <ClInclude Include="Graph\Tarjan\Tarjan.h" />
     <ClInclude Include="DynamicProgramming\Knapsack\Knapsack.h" />
     <ClInclude Include="DynamicProgramming\MaxIndependentSet\MaxSet.h" />
+    <ClInclude Include="Graph\TopologicalSort\Topological.h" />
     <ClInclude Include="HuffmanCodes\Huffman.h" />
     <ClInclude Include="KruskalsAlgorithm\Kruskal.h" />
     <ClInclude Include="PrimsAlgorithm\Prim.h" />
