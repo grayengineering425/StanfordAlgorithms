@@ -1,19 +1,22 @@
 #include "PrimsAlgorithm/Prim.h"
 #include "Scheduling/Scheduling.h"
-#include "Graph/Tarjan/Tarjan.h"
+#include "KruskalsAlgorithm/Kruskal.h"
+#include "DynamicProgramming/MaxIndependentSet/MaxSet.h"
+#include "DynamicProgramming/Knapsack/Knapsack.h"
+#include "HuffmanCodes/Huffman.h"
 
 #include <iostream>
 
 using namespace Greedy;
-using namespace Graph;
+
+using namespace Dynamic;
 
 int main()
 {
-	std::vector<std::vector<int>> edges = { {0,1},{1,2},{2,0},{1,3} };
-	int n = 4;
+	Huffman h;
+	h.createCoding();
+	std::cout << h.lengthEncoding(true ) << std::endl;
+	std::cout << h.lengthEncoding(false) << std::endl;
 
-	Tarjan t(edges, n);
-	t.stronglyConnected();
-
-	//-3612829
+	return 0;
 }
