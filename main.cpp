@@ -6,6 +6,7 @@
 #include "HuffmanCodes/Huffman.h"
 #include "Graph/TopologicalSort/Topological.h"
 #include "Graph/SCC/SCC.h"
+#include "Graph/Dijsktra/Dijsktra.h"
 
 #include <iostream>
 
@@ -15,8 +16,8 @@ using namespace Graph;
 
 int main()
 {
-	SCC s(false);
-	s.run();
+	Dijkstra d(false);
+	d.getShortestPaths(0);
 
 	return 0;
 }

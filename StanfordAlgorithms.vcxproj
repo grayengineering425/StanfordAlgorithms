@@ -131,6 +131,8 @@ xcopy "$(SolutionDir)Scheduling/Data/jobs.txt" "$(TargetDir)" /y</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DivideAndConquer\Karatsuba\Karatsuba.cpp" />
+    <ClCompile Include="Graph\Dijsktra\Dijsktra.cpp" />
     <ClCompile Include="Graph\SCC\SCC.cpp" />
     <ClCompile Include="Graph\Tarjan\Tarjan.cpp" />
     <ClCompile Include="DynamicProgramming\Knapsack\Knapsack.cpp" />
@@ -143,6 +145,8 @@ xcopy "$(SolutionDir)Scheduling/Data/jobs.txt" "$(TargetDir)" /y</Command>
     <ClCompile Include="Scheduling\Scheduling.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DivideAndConquer\Karatsuba\Karatsuba.h" />
+    <ClInclude Include="Graph\Dijsktra\Dijsktra.h" />
     <ClInclude Include="Graph\SCC\SCC.h" />
     <ClInclude Include="Graph\Tarjan\Tarjan.h" />
     <ClInclude Include="DynamicProgramming\Knapsack\Knapsack.h" />

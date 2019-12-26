@@ -11,6 +11,8 @@
     <ClCompile Include="Scheduling\Scheduling.cpp" />
     <ClCompile Include="Graph\TopologicalSort\Topological.cpp" />
     <ClCompile Include="Graph\SCC\SCC.cpp" />
+    <ClCompile Include="Graph\Dijsktra\Dijsktra.cpp" />
+    <ClCompile Include="DivideAndConquer\Karatsuba\Karatsuba.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graph\Tarjan\Tarjan.h" />
@@ -22,5 +24,7 @@
     <ClInclude Include="Scheduling\Scheduling.h" />
     <ClInclude Include="Graph\TopologicalSort\Topological.h" />
     <ClInclude Include="Graph\SCC\SCC.h" />
+    <ClInclude Include="Graph\Dijsktra\Dijsktra.h" />
+    <ClInclude Include="DivideAndConquer\Karatsuba\Karatsuba.h" />
   </ItemGroup>
 </Project>
