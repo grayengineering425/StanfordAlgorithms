@@ -7,17 +7,19 @@
 #include "Graph/TopologicalSort/Topological.h"
 #include "Graph/SCC/SCC.h"
 #include "Graph/Dijsktra/Dijsktra.h"
+#include "DivideAndConquer/Karatsuba/Karatsuba.h"
+#include "DivideAndConquer/Inversions/Inversions.h"
 
 #include <iostream>
 
 using namespace Greedy;
 using namespace Dynamic;
 using namespace Graph;
+using namespace DivandConq;
 
 int main()
 {
-	Dijkstra d(false);
-	d.getShortestPaths(0);
-
+	Inversions i(false);
+	std::cout << i.getNumInversions();
 	return 0;
 }
